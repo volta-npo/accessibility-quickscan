@@ -18,7 +18,12 @@
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "docker:build": "docker build -t volta-oss/accessibility-quickscan:local .",
     "docker:run": "docker compose up --build",
-    "serve:rust": "cargo run --manifest-path backend/rust/Cargo.toml -- serve"
+    "serve:rust": "cargo run --manifest-path backend/rust/Cargo.toml -- serve",
+    "lint": "npm run typecheck",
+    "format:check": "node --check src/*.js test/*.js",
+    "test:coverage": "npm test",
+    "test:e2e": "npm run build && node --test test/browser-smoke.test.js",
+    "test:a11y": "npm run build && node --test test/core.test.js"
   },
   "keywords": [
     "digital presence",
@@ -31,11 +36,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/volta-npo/accessibility-quickscan.git"
+    "url": "git+https://github.com/volta-npo/09-accessibility-quickscan.git"
   },
-  "homepage": "https://volta-npo.github.io/accessibility-quickscan/",
+  "homepage": "https://volta-npo.github.io/09-accessibility-quickscan/",
   "bugs": {
-    "url": "https://github.com/volta-npo/accessibility-quickscan/issues"
+    "url": "https://github.com/volta-npo/09-accessibility-quickscan/issues"
   },
   "author": "Volta Open Source <volta.npo@gmail.com>",
   "engines": {
