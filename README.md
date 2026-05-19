@@ -10,9 +10,9 @@
 ![Tests](https://img.shields.io/badge/Tests-25%20passing-111827?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-f59e0b?style=for-the-badge)
 
-**Digital Presence** · **Repo 09/50** · **No backend. No login. Client data stays local.**
+**Digital Presence** · **No backend. No login. Client data stays local.**
 
-[Live app](https://volta-npo.github.io/09-accessibility-quickscan/) · [Report an issue](https://github.com/volta-npo/09-accessibility-quickscan/issues) · [Volta](https://voltanpo.org)
+[Live app](https://volta-npo.github.io/accessibility-quickscan/) · [Report an issue](https://github.com/volta-npo/accessibility-quickscan/issues) · [Volta](https://voltanpo.org)
 
 </div>
 
@@ -101,6 +101,16 @@ sequenceDiagram
 
 ---
 
+## 🟦 TypeScript-first
+
+This repository is authored in **TypeScript**. The checked-in JavaScript files are compiled artifacts so the project can run directly on GitHub Pages without a build server.
+
+- Source: `src/**/*.ts` and `test/**/*.ts`
+- Build: `npm run build`
+- Runtime artifacts: `src/**/*.js` for static hosting
+
+---
+
 ## 🚀 Features
 
 | Area | What ships in v3 |
@@ -154,12 +164,24 @@ sequenceDiagram
 
 ---
 
+## 🧠 Backend engine
+
+This project now includes a backend-grade engine because the workflow benefits from server-side validation, batch processing, or future API use.
+
+| Runtime | Path | Purpose | Test command |
+|---|---|---|---|
+| Rust | `backend/rust` | Deterministic release-gate scoring, fingerprints, high-performance validators. | `npm run test:rust` |
+
+---
+
 ## 🛠️ Quick start
 
 ```bash
-git clone https://github.com/volta-npo/09-accessibility-quickscan.git
+git clone https://github.com/volta-npo/accessibility-quickscan.git
 cd 09-accessibility-quickscan
+npm install
 npm test
+npm run test:backend
 npm start
 ```
 
