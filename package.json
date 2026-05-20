@@ -36,11 +36,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/volta-npo/09-accessibility-quickscan.git"
+    "url": "git+https://github.com/volta-npo/accessibility-quickscan.git"
   },
-  "homepage": "https://volta-npo.github.io/09-accessibility-quickscan/",
+  "homepage": "https://volta-npo.github.io/accessibility-quickscan/",
   "bugs": {
-    "url": "https://github.com/volta-npo/09-accessibility-quickscan/issues"
+    "url": "https://github.com/volta-npo/accessibility-quickscan/issues"
   },
   "author": "Volta Open Source <volta.npo@gmail.com>",
   "engines": {
